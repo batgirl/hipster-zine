@@ -11,15 +11,17 @@
     <div class="container">
       <h2>New Article</h2>
       <hr>
-      <p class="error_message">
-        You messed up. Here are all the things you messed up:
-        <ul>
-          <li>Title can't be blank</li>
-          <li>Excerpt can't be blank</li>
-          <li>Body can't be blank</li>
-        </ul>
-      </p>
-      <form action="/" method="post">
+      <% if (error) { %>
+        <p class="error_message">
+          You messed up. Here are all the things you messed up:
+          <ul>
+            <li>Title can't be blank</li>
+            <li>Excerpt can't be blank</li>
+            <li>Body can't be blank</li>
+          </ul>
+        </p>
+      <% } %>
+      <form action="/new" method="post">
         <p class="title">
           Title 
           <input type="text" class="text" name="article_title">
