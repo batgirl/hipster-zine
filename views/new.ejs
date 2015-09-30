@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>The Zine</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <header>
+    <h1><a href="/" class="header">The Zine</a></h1>
+  </header>
+  <body>
+    <div class="container">
+      <h2>New Article</h2>
+      <hr>
+      <p class="error_message">
+        You messed up. Here are all the things you messed up:
+        <ul>
+          <li>Title can't be blank</li>
+          <li>Excerpt can't be blank</li>
+          <li>Body can't be blank</li>
+        </ul>
+      </p>
+      <form action="/" method="post">
+        <p class="title">
+          Title 
+          <input type="text" class="text" name="article_title">
+        </p>
+        <p class="background">
+          Background URL 
+          <input type="text" class="text" name="background_url">
+        </p>
+        <p class="box">
+          <input type="checkbox" name="dark_background"> 
+          Background image has dark colors
+        </p>
+        <p class="excerpt">
+          Excerpt 
+          <textarea name="excerpt"></textarea>
+        </p>
+        <p class="body">
+          Body 
+          <textarea name="body"></textarea>
+        </p>
+        <p>
+          <input type="submit" class="add" name="add_article" value="Add Article">
+        </p>
+      </form>
+    </div>
+  </body>
+</html>

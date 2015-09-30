@@ -1,0 +1,123 @@
+body {
+  background-image: url(../images/congruent_outline.png);
+  background-color: black;
+  font: 14px Arial, sans-serif;
+}
+
+header {
+  text-align: right;
+  background-color: black;
+  height: 120px;
+  margin-top: -20px;
+  width: 1100px;
+  margin-right: auto;
+  margin-left: auto;
+  background-image: url(https://unsplash.imgix.net/photo-1429198739803-7db875882052?dpr=2&fit=crop&fm=jpg&h=1575&q=75&w=1050);
+}
+
+h1 {
+  padding-top: 40px;
+  padding-right: 30px;
+}
+
+a {
+  text-decoration: none;
+}
+
+a.header {
+  color: #000000;
+}
+
+.container {
+  background-color: white;
+  width: 1060px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 20px;
+  padding-top: 5px;
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-bottom: 20px;
+}
+
+.error_message, ul {
+  color: darkred;
+  font-weight: bold;
+}
+
+.delete {
+  background-color: red;
+  color: white;
+}
+
+input.text, textarea {
+  width: 500px;
+  margin-left: 10px;
+}
+
+textarea {
+  height: 100px;
+  vertical-align: top;
+}
+
+input.add, input.delete, p.box, ul, .error_message {
+  margin-left: 200px;
+}
+
+p.title {
+  margin-left: 160px;
+}
+
+p.background {
+  margin-left: 80px;
+}
+
+p.excerpt {
+  margin-left: 140px;
+}
+
+p.body {
+  margin-left: 155px;
+}
+
+.article_title {
+  background-color: black;
+  height: 55px;
+  width: 1100px;
+  margin-top: 20px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+h2.title {
+  padding-left: 20px;
+  padding-top: 15px;
+  text-shadow: 1px 1px 1px grey;
+}
+
+.article_excerpt {
+  background-color: white;
+  font-family: Times, serif;
+  width: 1060px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 5px;
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-bottom: 5px;
+}
+
+.add_new {
+  margin-top: 20px;
+  margin-left: 1095px;
+}
+
+span.articleTitle {
+  float: left;
+}
+
+span.edit {
+  float: right;
+  margin-right: 20px; 
+}
+

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>The Zine</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <header>
+    <h1><a href="/" class="header">The Zine</a></h1>
+  </header>
+  <body>
+    <div class="container">
+      <h2>Edit Article</h2>
+      <hr>
+      <p class="error_message">
+        You messed up. Here are all the things you messed up:
+        <ul>
+          <li>Title can't be blank</li>
+          <li>Excerpt can't be blank</li>
+          <li>Body can't be blank</li>
+        </ul>
+      </p>
+      <form action="/<%= article._id %>" method="post">
+        <p class="title">
+          Title 
+          <input type="text" class="text" name="article_title" value="<%= article.title %>">
+        </p>
+        <p class="background">
+          Background URL 
+          <input type="text" class="text" name="background_url" value="<%= article.background %>">
+        </p>
+        <p class="box">
+          <% var checked = article.dark === null ? null : "checked"; %>
+          <input type="checkbox" name="dark_background" <%= checked %>> 
+          Background image has dark colors
+        </p>
+        <p class="excerpt">
+          Excerpt 
+          <textarea name="excerpt"><%= article.excerpt %></textarea>
+        </p>
+        <p class="body">
+          Body 
+          <textarea name="body"><%= article.body %></textarea>
+        </p>
+        <p>
+          <input type="submit" class="add" name="add_article" value="Update Article">
+        </p>
+      </form>
+      <form action="/<%= article._id %>/delete" method="post">
+        <p>
+          <input type="submit" class="delete" name="delete" value="Delete">
+        </p>
+      </form>
+    </div>
+  </body>
+</html>

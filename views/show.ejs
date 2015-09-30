@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>The Zine</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <header>
+    <h1><a href="/" class="header">The Zine</a></h1>
+  </header>
+  <body>
+    <% var fontColor = article.dark === null ? "black" : "white"; %>
+    <% var image = article.background ? article.background : "https://images.unsplash.com/photo-1434064511983-18c6dae20ed5?q=80&fm=jpg&s=c45f3bff08de3f8509e90f66aab9393f" %>
+        <div class="article_title" style="background-image: url(<%= image %>)">
+      <h2 class="title">
+        <span class="articleTitle" style="color: <%= fontColor %>"><%= article.title %></span>
+        <span class="edit"><a href="/<%= article._id %>/edit" style="color: <%= fontColor %>">Edit</a></span>
+      </h2>
+    </div>
+    <div class="article_excerpt">
+      <p><%= article.body %></p>
+    </div>
+  </body>
+</html>
