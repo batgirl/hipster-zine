@@ -1,7 +1,6 @@
 {
   "name": "hipster-zine",
   "version": "0.0.0",
-  "private": true,
   "scripts": {
     "start": "node ./bin/www"
   },
@@ -18,5 +17,10 @@
   "engines": {
     "node": "*",
     "npm": "*"
-  }
+  },
+  "keywords": [
+    "example",
+    "heroku"
+  ],
+  "author": "caalnaji"
 }
