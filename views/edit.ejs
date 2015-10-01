@@ -11,13 +11,13 @@
     <div class="container">
       <h2>Edit Article</h2>
       <hr>
-      <% if (error) { %>
+      <% if (errors.length) { %>
         <p class="error_message">
           You messed up. Here are all the things you messed up:
           <ul>
-            <li>Title can't be blank</li>
-            <li>Excerpt can't be blank</li>
-            <li>Body can't be blank</li>
+            <% for (var i = 0; i < errors.length; i++) { %>
+              <li><%= errors[i] %> can't be blank</li>
+            <% } %>
           </ul>
         </p>
       <% } %>

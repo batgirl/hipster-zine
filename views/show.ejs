@@ -10,7 +10,7 @@
   <body>
     <% var fontColor = article.dark === null ? "black" : "white"; %>
     <% var image = article.background ? article.background : "https://images.unsplash.com/photo-1434064511983-18c6dae20ed5?q=80&fm=jpg&s=c45f3bff08de3f8509e90f66aab9393f" %>
-        <div class="article_title" style="background-image: url(<%= image %>)">
+    <div class="article_title" style="background-image: url(<%= image %>)">
       <h2 class="title">
         <span class="articleTitle" style="color: <%= fontColor %>"><%= article.title %></span>
         <span class="edit"><a href="/<%= article._id %>/edit" style="color: <%= fontColor %>">Edit</a></span>
